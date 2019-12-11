@@ -5,9 +5,9 @@
   <subtitle>just real it！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.byronk.top/"/>
+  <link href="https://byronk.top/"/>
   <updated>2019-12-10T13:27:28.308Z</updated>
-  <id>http://www.byronk.top/</id>
+  <id>https://byronk.top/</id>
   
   <author>
     <name>Byron</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>promise篇</title>
-    <link href="http://www.byronk.top/2019/08/12/promise%E7%AF%87/"/>
-    <id>http://www.byronk.top/2019/08/12/promise%E7%AF%87/</id>
+    <link href="https://byronk.top/2019/08/12/promise%E7%AF%87/"/>
+    <id>https://byronk.top/2019/08/12/promise%E7%AF%87/</id>
     <published>2019-08-11T19:23:32.000Z</published>
     <updated>2019-12-10T13:27:28.308Z</updated>
     
@@ -35,23 +35,23 @@
     </summary>
     
     
-      <category term="web前端" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+      <category term="web前端" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="知识点总结" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
+      <category term="知识点总结" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="node.js" scheme="http://www.byronk.top/tags/node-js/"/>
+      <category term="node.js" scheme="https://byronk.top/tags/node-js/"/>
     
-      <category term="promise" scheme="http://www.byronk.top/tags/promise/"/>
+      <category term="promise" scheme="https://byronk.top/tags/promise/"/>
     
   </entry>
   
   <entry>
     <title>非关系型数据库MongoDB的使用</title>
-    <link href="http://www.byronk.top/2019/07/01/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93MongoDB%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://www.byronk.top/2019/07/01/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93MongoDB%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <link href="https://byronk.top/2019/07/01/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93MongoDB%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://byronk.top/2019/07/01/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93MongoDB%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
     <published>2019-06-30T19:23:32.000Z</published>
-    <updated>2019-12-09T14:26:17.196Z</updated>
+    <updated>2019-12-11T16:50:33.527Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>a</p><h4 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h4><p>详细： <a href="https://www.runoob.com/mongodb/mongodb-tutorial.html" target="_blank" rel="noopener">https://www.runoob.com/mongodb/mongodb-tutorial.html</a><br>步骤：下载–安装–配置环境变量–输入MongoD –version</p><p>基本概念：有数据库–集合–文档</p><p>可以有多个数据库，一个数据库中可以有多个集合（表），一个集合中可以有多个文档（表记录），文档结构和灵活，没有任何限制。不需要像MySQL一样先创建数据库、表、设计结构，是需要在需要插入数据的时候指定往哪个数据库的哪个集合操作就可以了，MongoDB自动完成创建库创建表这件事。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  qq:&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">     users:[</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">         &#123;name:&#39;张三&#39;, age:15&#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">         &#123;name:&#39;李四&#39;, age:15&#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">         &#123;name:&#39;张三54&#39;, age:15&#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">         &#123;name:&#39;张三1543&#39;, age:15&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">         ....</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">     ],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">     products:[</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">     </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">     ],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">     ....</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">  &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">  taobao:&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">  baidu:&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure><h5 id="关系型数据库和非关系型数据库"><a href="#关系型数据库和非关系型数据库" class="headerlink" title="关系型数据库和非关系型数据库"></a>关系型数据库和非关系型数据库</h5><p>表就是关系<br>   或者说表与表直接的存在关系。<br>1.所有的关系型数据库都需要通过sql语言来操作<br>2.所有的关系型数据库在操作之前都需要设计表结构<br>3.而且数据表还支持约束</p><ul><li>唯一的</li><li>主键</li><li>默认值</li><li>非空</li></ul><p>4.非关系型数据库非常灵活<br>5.有的菲关系型数据库就是key-value对儿<br>6.但是mogongdb是长得最像关系型数据库的非关系型数据库<br>    数据库–&gt;数据库<br>    数据表–&gt;集合（数组）<br>    表记录–&gt;文档对象<br>7.mogongdb不需要设计表结构<br>8.也就是说你可以任意的往里面存数据，没有结构性这么一说</p><h4 id="启动和关闭数据库"><a href="#启动和关闭数据库" class="headerlink" title="启动和关闭数据库"></a>启动和关闭数据库</h4><p>启动：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"># 使用所处盘符根目录下的&#x2F;data&#x2F;db作为自己的数据存储目录</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"># 所以在第一次执行该命令之前先自己手动新建一个&#x2F;data&#x2F;db</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">mongod</span></pre></td></tr></table></figure><p>如果想要修改默认的数据库存储目录，可以：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">Mongod --dbpath&#x3D;数据存储目录路径</span></pre></td></tr></table></figure><p>停止：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">直接Ctrl+c</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">或者直接关闭cmd</span></pre></td></tr></table></figure><h4 id="连接和退出数据库"><a href="#连接和退出数据库" class="headerlink" title="连接和退出数据库"></a>连接和退出数据库</h4><p>连接：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"># 该命令默认连接本机的MongoDB服务</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">mongo</span></pre></td></tr></table></figure><p>退出：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"># 在连接状态</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">exit</span></pre></td></tr></table></figure><h4 id="MongoDB基本命令"><a href="#MongoDB基本命令" class="headerlink" title="MongoDB基本命令"></a>MongoDB基本命令</h4><p>1.show.dbs<br>      查看显示所以数据库<br>2.db<br>     查看当前操作的数据库<br>3.use 数据库名称<br>     切换到指定的数据库（如果没有会新建）<br>4.插入数据</p><h4 id="在node中操作MongoDB数据库"><a href="#在node中操作MongoDB数据库" class="headerlink" title="在node中操作MongoDB数据库"></a>在node中操作MongoDB数据库</h4><h5 id="使用官方MongoDB包来操作"><a href="#使用官方MongoDB包来操作" class="headerlink" title="使用官方MongoDB包来操作"></a>使用官方MongoDB包来操作</h5><p> <a href="https://github.com/mongodb/node-mongodb-native" target="_blank" rel="noopener">https://github.com/mongodb/node-mongodb-native</a> </p><h5 id="使用第三方mongoose来操作MongoDB操作"><a href="#使用第三方mongoose来操作MongoDB操作" class="headerlink" title="使用第三方mongoose来操作MongoDB操作"></a>使用第三方mongoose来操作MongoDB操作</h5><p>这个包是基于上面官方包做了一次封装<br>官方文档： <a href="http://www.mongoosejs.net/" target="_blank" rel="noopener">http://www.mongoosejs.net/</a> </p><p>安装：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm i mongoose</span></pre></td></tr></table></figure><p>使用:</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">mongoose.connect(<span class="string">'mongodb://localhost/test'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Cat = mongoose.model(<span class="string">'Cat'</span>, &#123; <span class="attr">name</span>: <span class="built_in">String</span> &#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> kitty = <span class="keyword">new</span> Cat(&#123; <span class="attr">name</span>: <span class="string">'Zildjian'</span> &#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">kitty.save().then(<span class="function"><span class="params">()</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'meow'</span>));</span></pre></td></tr></table></figure><h5 id="使用例子：设计scheme发布model"><a href="#使用例子：设计scheme发布model" class="headerlink" title="使用例子：设计scheme发布model"></a>使用例子：设计scheme发布model</h5><h5 id="以及增删改查"><a href="#以及增删改查" class="headerlink" title="以及增删改查"></a>以及增删改查</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Schema = mongoose.Schema</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 连接数据库</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 指定连接的数据库不需要存在，当你插入第一条数据之后就会自动被创建出来</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">mongoose.connect(<span class="string">'mongodb://localhost/itcast'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 2. 设计文档结构（表结构）</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 字段名称就是表结构中的属性名称</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 约束的目的是为了保证数据的完整性，不要有脏数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> userSchema = <span class="keyword">new</span> Schema(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">  username: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    type: <span class="built_in">String</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">    required: <span class="literal">true</span> <span class="comment">// 必须有</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">  &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">  password: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">    type: <span class="built_in">String</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">    required: <span class="literal">true</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">  &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">  email: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">    type: <span class="built_in">String</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 3. 将文档结构发布为模型</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//    mongoose.model 方法就是用来将一个架构发布为 model</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//    第一个参数：传入一个大写名词单数字符串用来表示你的数据库名称</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//                 mongoose 会自动将大写名词的字符串生成 小写复数 的集合名称</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//                 例如这里的 User 最终会变为 users 集合名称</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//    第二个参数：架构 Schema</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//    返回值：模型构造函数</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> User = mongoose.model(<span class="string">'User'</span>, userSchema)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 4. 当我们有了模型构造函数之后，就可以使用这个构造函数对 users 集合中的数据为所欲为了（增删改查）</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// #region /新增数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// var admin = new User(&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   username: 'zs',</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   password: '123456',</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   email: 'admin@admin.com'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">47</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// admin.save(function (err, ret) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">48</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   if (err) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">49</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log('保存失败')</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">50</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125; else &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">51</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log('保存成功')</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">52</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log(ret)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">53</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">54</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">55</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">56</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// #endregion /新增数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">57</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">58</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">59</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">60</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">61</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">62</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">63</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// #region /查询数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">64</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">65</span></pre></td><td class="code"><pre><span class="line">查询所有</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">66</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// User.find(function (err, ret) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">67</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   if (err) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">68</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log('查询失败')</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">69</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125; else &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">70</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log(ret)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">71</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">72</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">73</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">74</span></pre></td><td class="code"><pre><span class="line">按条件查询</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">75</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// User.find(&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">76</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   username: 'zs'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">77</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;, function (err, ret) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">78</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   if (err) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">79</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log('查询失败')</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">80</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125; else &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">81</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log(ret)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">82</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">83</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">84</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">85</span></pre></td><td class="code"><pre><span class="line">按条件查询单个</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">86</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// User.findOne(&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">87</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   username: 'zs'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">88</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;, function (err, ret) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">89</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   if (err) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">90</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log('查询失败')</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">91</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125; else &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">92</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log(ret)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">93</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">94</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">95</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">96</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// #endregion /查询数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">97</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">98</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">99</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">100</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">101</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">102</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// #region /删除数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">103</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">104</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// User.remove(&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">105</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   username: 'zs'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">106</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;, function (err, ret) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">107</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   if (err) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">108</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log('删除失败')</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">109</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125; else &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">110</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log('删除成功')</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">111</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log(ret)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">112</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">113</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">114</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">115</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// #endregion /删除数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">116</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">117</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">118</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">119</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">120</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// #region /更新数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">121</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">122</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// User.findByIdAndUpdate('5a001b23d219eb00c8581184', &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">123</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   password: '123'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">124</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;, function (err, ret) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">125</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   if (err) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">126</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log('更新失败')</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">127</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125; else &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">128</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//     console.log('更新成功')</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">129</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//   &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">130</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#125;)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">131</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">132</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// #endregion /更新数据</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">133</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// **********************</span></span></pre></td></tr></table></figure>]]></content>
     
@@ -65,19 +65,19 @@
     </summary>
     
     
-      <category term="技术实战类" scheme="http://www.byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/"/>
+      <category term="技术实战类" scheme="https://byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/"/>
     
-      <category term="操作记录" scheme="http://www.byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+      <category term="操作记录" scheme="https://byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
     
-      <category term="MongDB" scheme="http://www.byronk.top/tags/MongDB/"/>
+      <category term="MongDB" scheme="https://byronk.top/tags/MongDB/"/>
     
   </entry>
   
   <entry>
     <title>用JS原生封装Ajax实现两种数据自动转化</title>
-    <link href="http://www.byronk.top/2019/06/20/%E7%94%A8JS%E5%8E%9F%E7%94%9F%E5%B0%81%E8%A3%85Ajax%E5%AE%9E%E7%8E%B0%E4%B8%A4%E7%A7%8D%E6%95%B0%E6%8D%AE%E8%87%AA%E5%8A%A8%E8%BD%AC%E5%8C%96/"/>
-    <id>http://www.byronk.top/2019/06/20/%E7%94%A8JS%E5%8E%9F%E7%94%9F%E5%B0%81%E8%A3%85Ajax%E5%AE%9E%E7%8E%B0%E4%B8%A4%E7%A7%8D%E6%95%B0%E6%8D%AE%E8%87%AA%E5%8A%A8%E8%BD%AC%E5%8C%96/</id>
+    <link href="https://byronk.top/2019/06/20/%E7%94%A8JS%E5%8E%9F%E7%94%9F%E5%B0%81%E8%A3%85Ajax%E5%AE%9E%E7%8E%B0%E4%B8%A4%E7%A7%8D%E6%95%B0%E6%8D%AE%E8%87%AA%E5%8A%A8%E8%BD%AC%E5%8C%96/"/>
+    <id>https://byronk.top/2019/06/20/%E7%94%A8JS%E5%8E%9F%E7%94%9F%E5%B0%81%E8%A3%85Ajax%E5%AE%9E%E7%8E%B0%E4%B8%A4%E7%A7%8D%E6%95%B0%E6%8D%AE%E8%87%AA%E5%8A%A8%E8%BD%AC%E5%8C%96/</id>
     <published>2019-06-19T19:23:32.000Z</published>
     <updated>2019-12-09T14:00:39.643Z</updated>
     
@@ -93,23 +93,23 @@
     </summary>
     
     
-      <category term="技术实战类" scheme="http://www.byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/"/>
+      <category term="技术实战类" scheme="https://byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/"/>
     
-      <category term="功能实现" scheme="http://www.byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0/"/>
+      <category term="功能实现" scheme="https://byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0/"/>
     
     
-      <category term="Ajax" scheme="http://www.byronk.top/tags/Ajax/"/>
+      <category term="Ajax" scheme="https://byronk.top/tags/Ajax/"/>
     
-      <category term="json" scheme="http://www.byronk.top/tags/json/"/>
+      <category term="json" scheme="https://byronk.top/tags/json/"/>
     
-      <category term="xml" scheme="http://www.byronk.top/tags/xml/"/>
+      <category term="xml" scheme="https://byronk.top/tags/xml/"/>
     
   </entry>
   
   <entry>
     <title>跨域cors和jsonp</title>
-    <link href="http://www.byronk.top/2019/06/20/%E8%B7%A8%E5%9F%9Fcors%E5%92%8Cjsonp/"/>
-    <id>http://www.byronk.top/2019/06/20/%E8%B7%A8%E5%9F%9Fcors%E5%92%8Cjsonp/</id>
+    <link href="https://byronk.top/2019/06/20/%E8%B7%A8%E5%9F%9Fcors%E5%92%8Cjsonp/"/>
+    <id>https://byronk.top/2019/06/20/%E8%B7%A8%E5%9F%9Fcors%E5%92%8Cjsonp/</id>
     <published>2019-06-19T19:23:32.000Z</published>
     <updated>2019-12-09T14:15:35.177Z</updated>
     
@@ -125,23 +125,23 @@
     </summary>
     
     
-      <category term="技术实战类" scheme="http://www.byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/"/>
+      <category term="技术实战类" scheme="https://byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/"/>
     
-      <category term="功能实现" scheme="http://www.byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0/"/>
+      <category term="功能实现" scheme="https://byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0/"/>
     
     
-      <category term="跨域" scheme="http://www.byronk.top/tags/%E8%B7%A8%E5%9F%9F/"/>
+      <category term="跨域" scheme="https://byronk.top/tags/%E8%B7%A8%E5%9F%9F/"/>
     
-      <category term="cors" scheme="http://www.byronk.top/tags/cors/"/>
+      <category term="cors" scheme="https://byronk.top/tags/cors/"/>
     
-      <category term="jsonp" scheme="http://www.byronk.top/tags/jsonp/"/>
+      <category term="jsonp" scheme="https://byronk.top/tags/jsonp/"/>
     
   </entry>
   
   <entry>
     <title>php基础了解黑箱解密</title>
-    <link href="http://www.byronk.top/2019/06/12/php%E5%9F%BA%E7%A1%80%E4%BA%86%E8%A7%A3%E9%BB%91%E7%AE%B1%E8%A7%A3%E5%AF%86/"/>
-    <id>http://www.byronk.top/2019/06/12/php%E5%9F%BA%E7%A1%80%E4%BA%86%E8%A7%A3%E9%BB%91%E7%AE%B1%E8%A7%A3%E5%AF%86/</id>
+    <link href="https://byronk.top/2019/06/12/php%E5%9F%BA%E7%A1%80%E4%BA%86%E8%A7%A3%E9%BB%91%E7%AE%B1%E8%A7%A3%E5%AF%86/"/>
+    <id>https://byronk.top/2019/06/12/php%E5%9F%BA%E7%A1%80%E4%BA%86%E8%A7%A3%E9%BB%91%E7%AE%B1%E8%A7%A3%E5%AF%86/</id>
     <published>2019-06-11T19:23:32.000Z</published>
     <updated>2019-12-09T14:46:07.876Z</updated>
     
@@ -157,21 +157,21 @@
     </summary>
     
     
-      <category term="服务器端" scheme="http://www.byronk.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/"/>
+      <category term="服务器端" scheme="https://byronk.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/"/>
     
-      <category term="php运用" scheme="http://www.byronk.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/php%E8%BF%90%E7%94%A8/"/>
+      <category term="php运用" scheme="https://byronk.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/php%E8%BF%90%E7%94%A8/"/>
     
     
-      <category term="服务器编程" scheme="http://www.byronk.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BC%96%E7%A8%8B/"/>
+      <category term="服务器编程" scheme="https://byronk.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="php" scheme="http://www.byronk.top/tags/php/"/>
+      <category term="php" scheme="https://byronk.top/tags/php/"/>
     
   </entry>
   
   <entry>
     <title>es6构造函数之实例与原型对象</title>
-    <link href="http://www.byronk.top/2019/06/06/es6%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B9%8B%E5%AE%9E%E4%BE%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1/"/>
-    <id>http://www.byronk.top/2019/06/06/es6%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B9%8B%E5%AE%9E%E4%BE%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1/</id>
+    <link href="https://byronk.top/2019/06/06/es6%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B9%8B%E5%AE%9E%E4%BE%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1/"/>
+    <id>https://byronk.top/2019/06/06/es6%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B9%8B%E5%AE%9E%E4%BE%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1/</id>
     <published>2019-06-05T16:00:00.000Z</published>
     <updated>2019-12-11T09:01:47.047Z</updated>
     
@@ -187,23 +187,23 @@
     </summary>
     
     
-      <category term="web前端" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+      <category term="web前端" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="知识点总结" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
+      <category term="知识点总结" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="es6" scheme="http://www.byronk.top/tags/es6/"/>
+      <category term="es6" scheme="https://byronk.top/tags/es6/"/>
     
-      <category term="原型对象" scheme="http://www.byronk.top/tags/%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1/"/>
+      <category term="原型对象" scheme="https://byronk.top/tags/%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1/"/>
     
-      <category term="构造函数" scheme="http://www.byronk.top/tags/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
+      <category term="构造函数" scheme="https://byronk.top/tags/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
   <entry>
     <title>npm被墙、下载慢问题的一劳永逸解决方法</title>
-    <link href="http://www.byronk.top/2019/04/04/npm%E8%A2%AB%E5%A2%99%E3%80%81%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E5%8A%B3%E6%B0%B8%E9%80%B8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
-    <id>http://www.byronk.top/2019/04/04/npm%E8%A2%AB%E5%A2%99%E3%80%81%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E5%8A%B3%E6%B0%B8%E9%80%B8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
+    <link href="https://byronk.top/2019/04/04/npm%E8%A2%AB%E5%A2%99%E3%80%81%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E5%8A%B3%E6%B0%B8%E9%80%B8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://byronk.top/2019/04/04/npm%E8%A2%AB%E5%A2%99%E3%80%81%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E5%8A%B3%E6%B0%B8%E9%80%B8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
     <published>2019-04-03T19:23:32.000Z</published>
     <updated>2019-12-08T18:40:20.428Z</updated>
     
@@ -219,21 +219,21 @@
     </summary>
     
     
-      <category term="技术实战类" scheme="http://www.byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/"/>
+      <category term="技术实战类" scheme="https://byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/"/>
     
-      <category term="环境搭建" scheme="http://www.byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+      <category term="环境搭建" scheme="https://byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="node.js" scheme="http://www.byronk.top/tags/node-js/"/>
+      <category term="node.js" scheme="https://byronk.top/tags/node-js/"/>
     
-      <category term="npm" scheme="http://www.byronk.top/tags/npm/"/>
+      <category term="npm" scheme="https://byronk.top/tags/npm/"/>
     
   </entry>
   
   <entry>
     <title>用css制作毛玻璃效果的背景</title>
-    <link href="http://www.byronk.top/2018/12/04/%E7%94%A8css%E5%88%B6%E4%BD%9C%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C%E7%9A%84%E8%83%8C%E6%99%AF/"/>
-    <id>http://www.byronk.top/2018/12/04/%E7%94%A8css%E5%88%B6%E4%BD%9C%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C%E7%9A%84%E8%83%8C%E6%99%AF/</id>
+    <link href="https://byronk.top/2018/12/04/%E7%94%A8css%E5%88%B6%E4%BD%9C%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C%E7%9A%84%E8%83%8C%E6%99%AF/"/>
+    <id>https://byronk.top/2018/12/04/%E7%94%A8css%E5%88%B6%E4%BD%9C%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C%E7%9A%84%E8%83%8C%E6%99%AF/</id>
     <published>2018-12-03T19:23:32.000Z</published>
     <updated>2019-12-07T23:48:42.096Z</updated>
     
@@ -249,25 +249,25 @@
     </summary>
     
     
-      <category term="技术实战类" scheme="http://www.byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/"/>
+      <category term="技术实战类" scheme="https://byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/"/>
     
-      <category term="功能实现" scheme="http://www.byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0/"/>
+      <category term="功能实现" scheme="https://byronk.top/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98%E7%B1%BB/%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0/"/>
     
     
-      <category term="css" scheme="http://www.byronk.top/tags/css/"/>
+      <category term="css" scheme="https://byronk.top/tags/css/"/>
     
-      <category term="html" scheme="http://www.byronk.top/tags/html/"/>
+      <category term="html" scheme="https://byronk.top/tags/html/"/>
     
-      <category term="JavaScript" scheme="http://www.byronk.top/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://byronk.top/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>CSS“隐藏”元素的几种方法的对比</title>
-    <link href="http://www.byronk.top/2018/10/28/CSS%E2%80%9C%E9%9A%90%E8%97%8F%E2%80%9D%E5%85%83%E7%B4%A0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95%E7%9A%84%E5%AF%B9%E6%AF%94/"/>
-    <id>http://www.byronk.top/2018/10/28/CSS%E2%80%9C%E9%9A%90%E8%97%8F%E2%80%9D%E5%85%83%E7%B4%A0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95%E7%9A%84%E5%AF%B9%E6%AF%94/</id>
+    <link href="https://byronk.top/2018/10/28/CSS%E2%80%9C%E9%9A%90%E8%97%8F%E2%80%9D%E5%85%83%E7%B4%A0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95%E7%9A%84%E5%AF%B9%E6%AF%94/"/>
+    <id>https://byronk.top/2018/10/28/CSS%E2%80%9C%E9%9A%90%E8%97%8F%E2%80%9D%E5%85%83%E7%B4%A0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95%E7%9A%84%E5%AF%B9%E6%AF%94/</id>
     <published>2018-10-27T19:23:32.000Z</published>
-    <updated>2019-12-07T23:44:31.596Z</updated>
+    <updated>2019-12-11T17:45:15.867Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>阅读目录**</p><ul><li><a href="https://www.cnblogs.com/lrzw32/p/5191012.html#_label0" target="_blank" rel="noopener">几种方法的简单介绍</a></li><li><a href="https://www.cnblogs.com/lrzw32/p/5191012.html#_label1" target="_blank" rel="noopener">元素隐藏后的事件响应</a></li><li><a href="https://www.cnblogs.com/lrzw32/p/5191012.html#_label2" target="_blank" rel="noopener">CSS3 transition对这几种方法的影响</a></li><li><a href="https://www.cnblogs.com/lrzw32/p/5191012.html#_label3" target="_blank" rel="noopener">总结说明</a></li><li><a href="https://www.cnblogs.com/lrzw32/p/5191012.html#_label4" target="_blank" rel="noopener"> 补充</a></li></ul><p>一说起CSS隐藏元素，我想大部分小伙伴们都会想到的第一种方法就是设置display为none。这是最为人所熟知也是最常用的方法。我相信还有不少人想到使用设置visibility为hidden来隐藏元素，这种方式也是常用的方法，而且也有很多人知道两者的不同。除了这两种方法，本文还总结了一些比较不常用的方法，比较了这几种“隐藏”元素方法的区别和优缺点，欢迎大家交流！！</p><p><a href="https://www.cnblogs.com/lrzw32/p/5191012.html#_labelTop" target="_blank" rel="noopener">回到顶部</a></p><h3 id="几种方法的简单介绍"><a href="#几种方法的简单介绍" class="headerlink" title="几种方法的简单介绍"></a>几种方法的简单介绍</h3><p>首先我们分别来说说到底有哪几种隐藏元素的方法，有一些方法是众所周知的，还有一些算是一种技巧。</p><h4 id="display-none"><a href="#display-none" class="headerlink" title="display:none"></a>display:none</h4><p>设置元素的display为none是最常用的隐藏元素的方法。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1 .hide &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">2     display:none;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">3 &#125;</span></pre></td></tr></table></figure><p>将元素设置为display:none后，元素在页面上将彻底消失，元素本来占有的空间就会被其他元素占有，也就是说它会导致浏览器的重排和重绘。</p><h4 id="visibility-hidden"><a href="#visibility-hidden" class="headerlink" title="visibility:hidden"></a>visibility:hidden</h4><p>设置元素的visibility为hidden也是一种常用的隐藏元素的方法，和display:none的区别在于，元素在页面消失后，其占据的空间依旧会保留着，所以它只会导致浏览器重绘而不会重排。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1 .hidden&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">2     visibility:hidden</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">3 &#125;</span></pre></td></tr></table></figure><p>visibility:hidden适用于那些元素隐藏后不希望页面布局会发生变化的场景</p><h4 id="opacity-0"><a href="#opacity-0" class="headerlink" title="opacity:0"></a>opacity:0</h4><p>opacity属性我相信大家都知道表示元素的透明度，而将元素的透明度设置为0后，在我们用户眼中，元素也是隐藏的，这算是一种隐藏元素的方法。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1 .transparent &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">2     opacity:0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">3 &#125;</span></pre></td></tr></table></figure><p>这种方法和visibility:hidden的一个共同点是元素隐藏后依旧占据着空间，但我们都知道，设置透明度为0后，元素只是隐身了，它依旧存在页面中。</p><h4 id="设置height，width等盒模型属性为0"><a href="#设置height，width等盒模型属性为0" class="headerlink" title="设置height，width等盒模型属性为0"></a>设置height，width等盒模型属性为0</h4><p>这是我总结的一种比较奇葩的技巧，简单说就是将元素的margin，border，padding，height和width等影响元素盒模型的属性设置成0，如果元素内有子元素或内容，还应该设置其overflow:hidden来隐藏其子元素，这算是一种奇技淫巧。</p><p><a href="javascript:void(0);" target="_blank" rel="noopener"><img alt="复制代码" data-src="https://common.cnblogs.com/images/copycode.gif" class="lazyload"></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1 .hiddenBox &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">2     margin:0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">3     border:0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">4     padding:0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">5     height:0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">6     width:0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">7     overflow:hidden;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">8 &#125;</span></pre></td></tr></table></figure><p><a href="javascript:void(0);" target="_blank" rel="noopener"><img alt="复制代码" data-src="https://common.cnblogs.com/images/copycode.gif" class="lazyload"></a></p><p>这种方式既不实用，也可能存在着着一些问题。但平时我们用到的一些页面效果可能就是采用这种方式来完成的，比如jquery的slideUp动画，它就是设置元素的overflow:hidden后，接着通过定时器，不断地设置元素的height，margin-top，margin-bottom，border-top，border-bottom，padding-top，padding-bottom为0，从而达到slideUp的效果。</p><p><a href="https://www.cnblogs.com/lrzw32/p/5191012.html#_labelTop" target="_blank" rel="noopener">回到顶部</a></p><h3 id="元素隐藏后的事件响应"><a href="#元素隐藏后的事件响应" class="headerlink" title="元素隐藏后的事件响应"></a>元素隐藏后的事件响应</h3><p>如果被隐藏的元素绑定了一些事件，我们执行了相关操作后，这些事件是否会被响应并执行呢，看看下面的代码：</p><p><a href="javascript:void(0);" target="_blank" rel="noopener"><img alt="复制代码" data-src="https://common.cnblogs.com/images/copycode.gif" class="lazyload"></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"> 1 &lt;style&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"> 2     div &#123; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"> 3         width: 100px; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"> 4         height: 100px; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"> 5         background: red; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"> 6         margin: 15px; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"> 7         padding: 10px; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"> 8         border: 5px solid green; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"> 9         display: inline-block; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">10         overflow: hidden; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">11     &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">12     .none &#123; display: none; &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">13     .hidden &#123; visibility: hidden; &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">14     .opacity0 &#123; opacity: 0; &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">15     .height0 &#123; height: 0; &#125;  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">16 &lt;&#x2F;style&gt;  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">17 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">18 &lt;div class&#x3D;&quot;none&quot;&gt;&lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">19 &lt;div class&#x3D;&quot;hidden&quot;&gt;&lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">20 &lt;div class&#x3D;&quot;opacity0&quot;&gt;&lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">21 &lt;div class&#x3D;&quot;height0&quot;&gt;aa&lt;&#x2F;div&gt;  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">22 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">23 &lt;script src&#x3D;&quot;&#x2F;Scripts&#x2F;jquery-1.10.2.min.js&quot;&gt;&lt;&#x2F;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">24 &lt;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">25     $(&quot;.none&quot;).on(&quot;click&quot;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">26         console.log(&quot;none clicked&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">27     &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">28     $(&quot;.hidden&quot;).on(&quot;click&quot;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">29         console.log(&quot;hidden clicked&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">30     &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">31     $(&quot;.opacity0&quot;).on(&quot;click&quot;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">32         console.log(&quot;opacity0 clicked&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">33     &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">34     $(&quot;.height0&quot;).on(&quot;click&quot;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">35         console.log(&quot;height0 clicked&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">36     &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">37 &lt;&#x2F;script&gt;</span></pre></td></tr></table></figure><p><a href="javascript:void(0);" target="_blank" rel="noopener"><img alt="复制代码" data-src="https://common.cnblogs.com/images/copycode.gif" class="lazyload"></a></p><p>这段代码将四种隐藏元素的方法分别展示出来，然后绑定其点击事件，经过测试，主要有下面的结论：</p><p>1、display:none：元素彻底消失，很显然不会触发其点击事件<br>2、visibility:hidden：无法触发其点击事件，有一种说法是display:none是元素看不见摸不着，而visibility:hidden是看不见摸得着，这种说法是不准确的，设置元素的visibility后无法触发点击事件，说明这种方法元素也是消失了，只是依然占据着页面空间。<br>3、opacity:0：可以触发点击事件，原因也很简单，设置元素透明度为0后，元素只是相对于人眼不存在而已，对浏览器来说，它还是存在的，所以可以触发点击事件<br>4、height:0：将元素的高度设置为0，并且设置overflow:hidden。使用这种方法来隐藏元素，是否可以触发事件要根据具体的情况来分析。如果元素设置了border，padding等属性不为0，很显然，页面上还是能看到这个元素的，触发元素的点击事件完全没有问题。如果全部属性都设置为0，很显然，这个元素相当于消失了，即无法触发点击事件。</p><p>但是这些结论真的准确吗？<br>我们在上面的代码中添加这样一句代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1 $(&quot;.none&quot;).click();</span></pre></td></tr></table></figure><p>结果发现，触发了click事件，也就是通过JS可以触发被设置为display:none的元素的事件。<br>所以前面无法触发点击事件的真正原因是鼠标无法真正接触到被设置成隐藏的元素！！！</p><p><a href="https://www.cnblogs.com/lrzw32/p/5191012.html#_labelTop" target="_blank" rel="noopener">回到顶部</a></p><h3 id="CSS3-transition对这几种方法的影响"><a href="#CSS3-transition对这几种方法的影响" class="headerlink" title="CSS3 transition对这几种方法的影响"></a>CSS3 transition对这几种方法的影响</h3><p>CSS3提供的transition极大地提高了网页动画的编写，但并不是每一种CSS属性都可以通过transition来进行动画的。我们修改代码如下：</p><p><a href="javascript:void(0);" target="_blank" rel="noopener"><img alt="复制代码" data-src="https://common.cnblogs.com/images/copycode.gif" class="lazyload"></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"> 1 &lt;style&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"> 2     div &#123; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"> 3         width: 100px; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"> 4         height: 100px; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"> 5         background: red; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"> 6         margin: 15px; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"> 7         padding: 10px; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"> 8         border: 5px solid green; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"> 9         display: inline-block; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">10         overflow: hidden; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">11         transition: all linear 2s;  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">12     &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">13 &lt;&#x2F;style&gt;  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">14 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">15 &lt;div class&#x3D;&quot;none&quot;&gt;&lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">16 &lt;div class&#x3D;&quot;hidden&quot;&gt;&lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">17 &lt;div class&#x3D;&quot;opacity0&quot;&gt;&lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">18 &lt;div class&#x3D;&quot;height0&quot;&gt;aa&lt;&#x2F;div&gt;  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">19 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">20 &lt;script src&#x3D;&quot;&#x2F;Scripts&#x2F;jquery-1.10.2.min.js&quot;&gt;&lt;&#x2F;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">21 &lt;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">22 $(&quot;.none&quot;).on(&quot;click&quot;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">23     console.log(&quot;none clicked&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">24     $(this).css(&quot;display&quot;, &quot;none&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">25 &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">26 $(&quot;.hidden&quot;).on(&quot;click&quot;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">27     console.log(&quot;hidden clicked&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">28     $(this).css(&quot;visibility&quot;, &quot;hidden&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">29 &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">30 $(&quot;.opacity0&quot;).on(&quot;click&quot;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">31     console.log(&quot;opacity0 clicked&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">32     $(this).css(&quot;opacity&quot;, 0);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">33 &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">34 $(&quot;.height0&quot;).on(&quot;click&quot;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">35     console.log(&quot;height0 clicked&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">36     $(this).css(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">37         &quot;height&quot;: 0,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">38     &#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line">39 &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line">40 &lt;&#x2F;script&gt;</span></pre></td></tr></table></figure><p><a href="javascript:void(0);" target="_blank" rel="noopener"><img alt="复制代码" data-src="https://common.cnblogs.com/images/copycode.gif" class="lazyload"></a></p><p>经过测试，可以看到：<br>1、display:none：完全不受transition属性的影响，元素立即消失<br>2、visibility：hidden：元素消失的时间跟transition属性设置的时间一样，但是没有动画效果<br>3、opacity和height等属性能够进行正常的动画效果</p><p>假设我们要通过CSS3来做一个淡出的动画效果，应该如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1 .fadeOut &#123; visibility: visible; opacity: 1; transition: all linear 2s; &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">2     .fadeOut:hover &#123; visibility: hidden; opacity: 0; &#125;</span></pre></td></tr></table></figure><p>应该同时设置元素的visibility和opacity属性。</p><p><a href="https://www.cnblogs.com/lrzw32/p/5191012.html#_labelTop" target="_blank" rel="noopener">回到顶部</a></p><h3 id="总结说明"><a href="#总结说明" class="headerlink" title="总结说明"></a>总结说明</h3><p>本文总结说明了“隐藏”元素的几种方式，其中最常用的还是display:none和visibility:hidden。其他的方式只能算是奇技淫巧，并不推荐使用它们来隐藏元素，它们的真正用途应该不在隐藏元素，而是通过了解这些方法的特点，挖掘出其真正的使用场景。欢迎大家交流！！</p>]]></content>
     
@@ -281,21 +281,21 @@
     </summary>
     
     
-      <category term="web前端" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+      <category term="web前端" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="知识点总结" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
+      <category term="知识点总结" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="css" scheme="http://www.byronk.top/tags/css/"/>
+      <category term="css" scheme="https://byronk.top/tags/css/"/>
     
-      <category term="html" scheme="http://www.byronk.top/tags/html/"/>
+      <category term="html" scheme="https://byronk.top/tags/html/"/>
     
   </entry>
   
   <entry>
     <title>transition、transform、animation之css3新特性</title>
-    <link href="http://www.byronk.top/2018/07/10/transition%E3%80%81transform%E3%80%81animation%E4%B9%8Bcss3%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-    <id>http://www.byronk.top/2018/07/10/transition%E3%80%81transform%E3%80%81animation%E4%B9%8Bcss3%E6%96%B0%E7%89%B9%E6%80%A7/</id>
+    <link href="https://byronk.top/2018/07/10/transition%E3%80%81transform%E3%80%81animation%E4%B9%8Bcss3%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    <id>https://byronk.top/2018/07/10/transition%E3%80%81transform%E3%80%81animation%E4%B9%8Bcss3%E6%96%B0%E7%89%B9%E6%80%A7/</id>
     <published>2018-07-09T19:23:32.000Z</published>
     <updated>2019-12-11T09:01:30.495Z</updated>
     
@@ -311,21 +311,21 @@
     </summary>
     
     
-      <category term="web前端" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+      <category term="web前端" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="知识点总结" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
+      <category term="知识点总结" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="css3" scheme="http://www.byronk.top/tags/css3/"/>
+      <category term="css3" scheme="https://byronk.top/tags/css3/"/>
     
-      <category term="transition" scheme="http://www.byronk.top/tags/transition/"/>
+      <category term="transition" scheme="https://byronk.top/tags/transition/"/>
     
   </entry>
   
   <entry>
     <title>html5新标签与特性</title>
-    <link href="http://www.byronk.top/2018/07/08/html5%E6%96%B0%E6%A0%87%E7%AD%BE%E4%B8%8E%E7%89%B9%E6%80%A7/"/>
-    <id>http://www.byronk.top/2018/07/08/html5%E6%96%B0%E6%A0%87%E7%AD%BE%E4%B8%8E%E7%89%B9%E6%80%A7/</id>
+    <link href="https://byronk.top/2018/07/08/html5%E6%96%B0%E6%A0%87%E7%AD%BE%E4%B8%8E%E7%89%B9%E6%80%A7/"/>
+    <id>https://byronk.top/2018/07/08/html5%E6%96%B0%E6%A0%87%E7%AD%BE%E4%B8%8E%E7%89%B9%E6%80%A7/</id>
     <published>2018-07-07T19:23:32.000Z</published>
     <updated>2019-12-11T11:55:58.313Z</updated>
     
@@ -341,19 +341,19 @@
     </summary>
     
     
-      <category term="web前端" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+      <category term="web前端" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="知识点总结" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
+      <category term="知识点总结" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="html5" scheme="http://www.byronk.top/tags/html5/"/>
+      <category term="html5" scheme="https://byronk.top/tags/html5/"/>
     
   </entry>
   
   <entry>
     <title>css定位（position）总结备忘</title>
-    <link href="http://www.byronk.top/2018/07/04/css%E5%AE%9A%E4%BD%8D(position)%E6%80%BB%E7%BB%93%E5%A4%87%E5%BF%98/"/>
-    <id>http://www.byronk.top/2018/07/04/css%E5%AE%9A%E4%BD%8D(position)%E6%80%BB%E7%BB%93%E5%A4%87%E5%BF%98/</id>
+    <link href="https://byronk.top/2018/07/04/css%E5%AE%9A%E4%BD%8D(position)%E6%80%BB%E7%BB%93%E5%A4%87%E5%BF%98/"/>
+    <id>https://byronk.top/2018/07/04/css%E5%AE%9A%E4%BD%8D(position)%E6%80%BB%E7%BB%93%E5%A4%87%E5%BF%98/</id>
     <published>2018-07-03T19:23:32.000Z</published>
     <updated>2019-12-11T11:59:21.572Z</updated>
     
@@ -369,21 +369,21 @@
     </summary>
     
     
-      <category term="web前端" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+      <category term="web前端" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="知识点总结" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
+      <category term="知识点总结" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="css" scheme="http://www.byronk.top/tags/css/"/>
+      <category term="css" scheme="https://byronk.top/tags/css/"/>
     
-      <category term="position" scheme="http://www.byronk.top/tags/position/"/>
+      <category term="position" scheme="https://byronk.top/tags/position/"/>
     
   </entry>
   
   <entry>
     <title>css三大特性</title>
-    <link href="http://www.byronk.top/2018/07/01/css%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/"/>
-    <id>http://www.byronk.top/2018/07/01/css%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/</id>
+    <link href="https://byronk.top/2018/07/01/css%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/"/>
+    <id>https://byronk.top/2018/07/01/css%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/</id>
     <published>2018-06-30T16:00:00.000Z</published>
     <updated>2019-12-10T10:08:35.795Z</updated>
     
@@ -399,12 +399,12 @@
     </summary>
     
     
-      <category term="web前端" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+      <category term="web前端" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="知识点总结" scheme="http://www.byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
+      <category term="知识点总结" scheme="https://byronk.top/categories/web%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="css" scheme="http://www.byronk.top/tags/css/"/>
+      <category term="css" scheme="https://byronk.top/tags/css/"/>
     
   </entry>
   
