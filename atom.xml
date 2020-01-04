@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://byronk.top/"/>
-  <updated>2019-12-29T13:25:17.023Z</updated>
+  <updated>2020-01-04T12:05:47.406Z</updated>
   <id>https://byronk.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面试杂谈库与框架和mvc与mvvm概念</title>
+    <link href="https://byronk.top/2020/01/05/%E9%9D%A2%E8%AF%95%E6%9D%82%E8%B0%88%E5%BA%93%E4%B8%8E%E6%A1%86%E6%9E%B6%E5%92%8Cmvc%E4%B8%8Emvvm%E6%A6%82%E5%BF%B5/"/>
+    <id>https://byronk.top/2020/01/05/%E9%9D%A2%E8%AF%95%E6%9D%82%E8%B0%88%E5%BA%93%E4%B8%8E%E6%A1%86%E6%9E%B6%E5%92%8Cmvc%E4%B8%8Emvvm%E6%A6%82%E5%BF%B5/</id>
+    <published>2020-01-04T16:00:00.000Z</published>
+    <updated>2020-01-04T12:05:47.406Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020年来了，新的一年新的气象。</p><p>我的新年愿望是找到一份工作，最近也在忙着面试，不知道哪家老总能帮我实现新年愿望…</p><p>面试结果也还没出来，这段时间也无法计划去再学什么，就先整理整理以前的一些内容吧</p><h4 id="框架与库的区别"><a href="#框架与库的区别" class="headerlink" title="框架与库的区别"></a>框架与库的区别</h4><p>在说库与框架之前我们先来了解一下：</p><p>提高开发效率的发展历程：原生JS–&gt;Jquery、bootstrap之类的库–&gt;前端的模板引擎（art-template之类）–&gt;Angular/Vue/React等框架。由此可以看出，框架与库其实再某些方面它们的界限并不明显，都是开发效率发展中的不可或缺的一环。</p><p>运用中需要注意的区别：</p><p>框架：是一套完整的解决方案；对项目的侵入性较大，项目如果需要更换框架，则需要重新架构整个项目。</p><p>  库（插件）：提供某一个小功能，对项目的侵入性较小，如果某个库无法完成某些需求，可以很容易切换到其它库实现需求。</p><h4 id="MVC与MVVM"><a href="#MVC与MVVM" class="headerlink" title="MVC与MVVM"></a>MVC与MVVM</h4><p>这俩长得像但有着很大区别，它们这个概念所发挥的领域都不一样。</p><ul><li><p>MVC是后端的分层开发概念：View传递指令到Controller，Controller完成业务逻辑后，要求Model改变状态，Model将新的数据发送到View，用户得到反馈。所有通信都是单向的。</p></li><li><p>MVVM是前端视图层的概念，主要关注于 视图层分离，也就是说：MVVM把前端的视图层，分为了 三部分 Model, View ,      VM ViewModel 它们之间的数据传递就比较复杂，用图说话吧。</p></li></ul><p><img alt data-src="https://cdn.jsdelivr.net/gh/bxk79/mycdn/article/14/1.png" class="lazyload"></p><p>要说以前的一些写web系统方式它的这个前端后端界限还是比较模糊的，那么现在的这些前端框架所采用的mvvm模式可以说是将前端、后端很好的分离开来。</p><h4 id="V-model的原理"><a href="#V-model的原理" class="headerlink" title="V-model的原理"></a>V-model的原理</h4><p>其中呢就想起最近的一场面试中，面试官问Vue中的数据双向绑定V-model的原理，用它多少次从没想过它还有个原理，所以当时被问到了，于是回家查了些资料，发现还是有些惊喜的，这里就来整理一下吧。</p><p>先来看看资料怎么说，看不懂不包解释哟~</p><blockquote><p> vue.js是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持，各个属性的setter、getter，在数据变动时发布消息给订阅者，出发相应的监听回调。</p><p>具体步骤：</p><p>​      第一步：需要observe的数据对象进行递归遍历，包括子属性对象的属性，都加上setter和getter。这样给这个对象的某个值赋值，就会触发setter，那么就能监听到了数据的变化。</p><p>​      第二步：compile解析模板指令，将模板中的变量替换成数据，然后初始化渲染页面视图，并将每个指令对应的节点绑定更新函数，添加监听数据的订阅者，一旦数据有变动，收到通知，更新视图</p><p>​      第三步：Watcher订阅者是Observer和Compile之间通信的桥梁，主要做的事情是：</p><p>​      1、在自身实例化时往属性订阅器（dep）里面添加自己</p><p>​      2、自身必须有一个update()方法</p><p>​      3、待属性变动dep.notice()通知时，能调用自身的update()方法，并触发Compile中绑定的回调，则成功身退。</p><p>​      第四步：MVVM作为数据绑定的入口，整合Observer、Compile和Watcher三者，通过Observer来监听自己的model数据变化，通过Compile来解析编译模板指令，最终利用Watcher搭起Obsever和Compile之间的通信桥梁，达到数据变化-&gt;视图更新；视图交互变化（input）-&gt;数据model变更的双向绑定效果。</p></blockquote><p>以上就是找到的描述得比较容易理解的，那么惊喜在哪呢？当看到资料中的这句话“给这个对象的某个值赋值，就会触发setter，那么就能监听到了数据的变化”，是否跟我一样想起了event这个事件对象，数据双向绑定这个过程简化为下图：</p><p><img alt data-src="https://cdn.jsdelivr.net/gh/bxk79/mycdn/article/14/2.png" class="lazyload"></p><p>那么，就有下面这样一个等效关系：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">v-model=<span class="string">"abcd"</span>  等效于 :value=<span class="string">"abcd"</span> @inpput=<span class="string">"abcd=$event.target.value"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//其中 ：是v-bind的简写， @ 是v-on的简写</span></span></pre></td></tr></table></figure><p>这样的话数据的来回两个方向就拆分开来写，它必然拓宽了处理某些业务逻辑的方法。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="心得杂谈" scheme="https://byronk.top/categories/%E5%BF%83%E5%BE%97%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="vue" scheme="https://byronk.top/tags/vue/"/>
+    
+      <category term="mvc" scheme="https://byronk.top/tags/mvc/"/>
+    
+      <category term="mvvm" scheme="https://byronk.top/tags/mvvm/"/>
+    
+  </entry>
   
   <entry>
     <title>vuex使用注意细节</title>
